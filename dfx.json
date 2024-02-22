@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "vercel_sveltekit_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/vercel_sveltekit_backend/main.mo",
+      "type": "motoko"
+    },
+    "vercel_sveltekit_frontend": {
+      "dependencies": [
+        "vercel_sveltekit_backend"
+      ],
+      "source": [
+        "src/vercel_sveltekit_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "vercel_sveltekit_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

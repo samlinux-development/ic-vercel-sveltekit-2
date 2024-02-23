@@ -1,26 +1,61 @@
 <script>
+  import { enhance } from '$app/forms';
   import "../index.scss";
-  import { backend } from "$lib/canisters";
 
-  let greeting = "";
+  export let form;
 
-  function onSubmit(event) {
-    const name = event.target.name.value;
-    backend.greet(name).then((response) => {
-      greeting = response;
-    });
-    return false;
-  }
 </script>
 
 <main>
   <img src="/logo2.svg" alt="DFINITY logo" />
   <br />
   <br />
-  <form action="#" on:submit|preventDefault={onSubmit}>
-    <label for="name">Enter your name: &nbsp;</label>
-    <input id="name" alt="Name" type="text" />
-    <button type="submit">Click Me!</button>
+    
+  <form method="POST" action="?/bmi" use:enhance >
+    <h3>Calculate your body mass index (BMI)</h3>
+
+    <div class="table">
+      <div class="table-row">
+         <div class="table-cell">
+          <label for="name">Your name: &nbsp;</label>
+         </div>
+         <div class="table-cell">
+          <input id="name" name="name" type="text" />
+        </div>
+      </div>
+
+      <div class="table-row">
+        <div class="table-cell">
+         <label for="height">Your height in cm: &nbsp;</label>
+        </div>
+        <div class="table-cell">
+         <input id="height" name="height" type="number" />
+       </div>
+      </div>
+
+     <div class="table-row">
+      <div class="table-cell">
+       <label for="height">Your weight in kg:</label>
+      </div>
+      <div class="table-cell">
+       <input id="weight" name="weight" type="number" />
+      </div>
+     </div>
+
+     <div class="table-row">
+      <div class="table-cell">
+        <button type="submit">Click Me!</button>
+      </div>
+      <div class="table-cell"></div>
+     </div>
+    </div>
+
   </form>
-  <section id="greeting">{greeting}</section>
+
+  {#if form?.success}
+    <section id="result">
+      <div>Hello 👋 {form.icData.name}, your BMI is {form.icData.bmi}</div>
+      <div id="icInfo">canisterId: {form.icData.backendCanisterId}</div>
+    </section>
+  {/if}
 </main>

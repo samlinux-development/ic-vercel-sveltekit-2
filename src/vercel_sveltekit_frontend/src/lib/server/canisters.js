@@ -1,4 +1,4 @@
-import { createActor, canisterId } from 'declarations/vercel_sveltekit_backend';
+import { createActor, canisterId } from '$lib/server/declarations/backend/index.js';
 import { building } from '$app/environment';
 
 function dummyActor() {
@@ -10,3 +10,5 @@ const buildingOrTesting = building || process.env.NODE_ENV === "test";
 export const backend = buildingOrTesting
   ? dummyActor()
   : createActor(canisterId);
+
+  export const backendCanisterId = canisterId;

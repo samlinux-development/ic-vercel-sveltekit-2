@@ -11,27 +11,34 @@ img {
 }
 
 form {
-  display: flex;
-  justify-content: center;
-  gap: 0.5em;
-  flex-flow: row wrap;
-  max-width: 40vw;
+  display: table;
+  padding: 15px;
+  border-spacing: 0.5em;
+
   margin: auto;
-  align-items: baseline;
+  border: 1px solid #222;
 }
 
 button[type="submit"] {
   padding: 5px 20px;
   margin: 10px auto;
-  float: right;
 }
 
-#greeting {
+#result {
+  max-width: 550px;
   margin: 10px auto;
   padding: 10px 60px;
   border: 1px solid #222;
 }
 
-#greeting:empty {
+#result:empty {
   display: none;
 }
+
+#icInfo {
+  margin-top: 10px;
+  font-size: .9rem;
+}
+
+.table-row {display: table-row; }
+.table-cell {display: table-cell; }

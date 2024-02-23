@@ -1,0 +1,30 @@
+type Result_1 = 
+ variant {
+   err: Error;
+   ok;
+ };
+type Result = 
+ variant {
+   err: Error;
+   ok: opt Entry;
+ };
+type Error = 
+ variant {
+   NoRecord;
+   NotAuthorized;
+ };
+type Entry = 
+ record {
+   desc: text;
+   name: text;
+ };
+service : {
+  /// *  calc bmi
+  bmi: (float64, float64) -> (float64) query;
+  /// * Get the glossary entries by key.
+  get: (nat) -> (opt Entry) query;
+  /// * Install the glossary entries.
+  installer: () -> (Result_1);
+  /// * Search for a glossary term
+  search: (text) -> (Result) query;
+}

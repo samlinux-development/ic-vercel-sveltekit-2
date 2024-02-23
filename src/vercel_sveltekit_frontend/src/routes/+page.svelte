@@ -9,7 +9,7 @@
 <main>
   <img src="/logo2.svg" alt="DFINITY logo" />
   <br />
-    
+  
   <form method="POST" action="?/bmi" use:enhance >
     <h3>Calculate your body mass index (BMI)</h3>
 
@@ -53,7 +53,7 @@
 
   {#if form?.success}
     <section id="result">
-      <div>Hello 👋 {form.icData.name}, <br>your BMI is {form.icData.bmi}</div>
+      <div>Hello 👋 {form.icData.name},<br>your BMI is {form.icData.bmi}</div>
       <div id="icInfo">canisterId: {form.icData.backendCanisterId}</div>
     </section>
   {/if}

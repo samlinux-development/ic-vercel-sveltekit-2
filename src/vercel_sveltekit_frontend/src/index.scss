@@ -14,7 +14,6 @@ form {
   display: table;
   padding: 5px;
   border-spacing: 0.5em;
-
   margin: auto;
   border: 1px solid #222;
   font-size: 1rem;
@@ -33,9 +32,10 @@ button[type="submit"] {
 }
 
 #result {
-  max-width: 550px;
+  max-width: 354px;
   margin: 10px auto;
-  padding: 10px 20px;
+  padding: 5px;
+  border-spacing: 0.5em;
   border: 1px solid #222;
   text-align: center;
 }

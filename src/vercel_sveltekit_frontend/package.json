@@ -4,11 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "setup": "npm i && dfx canister create vercel_sveltekit_backend && dfx generate vercel_sveltekit_backend && dfx deploy",
     "start": "vite --port 3000",
-    "prebuild": "dfx generate",
-    "build": "tsc && vite build",
-    "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\""
+    "build": "vite build"
   },
   "dependencies": {
     "@dfinity/agent": "^1.0.1",

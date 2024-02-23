@@ -17,6 +17,7 @@ form {
 
   margin: auto;
   border: 1px solid #222;
+  font-size: 1rem;
 }
 
 button[type="submit"] {
@@ -24,11 +25,19 @@ button[type="submit"] {
   margin: 10px auto;
 }
 
+// media query for mobile devices
+@media (max-width: 600px) {
+  button[type="submit"] {
+    font-size: 1rem;
+  }
+}
+
 #result {
   max-width: 550px;
   margin: 10px auto;
-  padding: 10px 60px;
+  padding: 10px 20px;
   border: 1px solid #222;
+  text-align: center;
 }
 
 #result:empty {

@@ -10,9 +10,11 @@ A demo project to demonstrate how a web2 frontend can access a Motoko backend ca
 
 Running example: https://ic-vercel-sveltekit-2-vercel-sveltekit-frontend.vercel.app/
 
-The Motoko backend canister is deployed at: https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=yegl5-fyaaa-aaaak-qda4a-cai. 
+The Candid UI can be seen at: https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=yegl5-fyaaa-aaaak-qda4a-cai. 
 
-Source code of the Motoko code can be found at: https://github.com/samlinux-development/ic-vercel-sveltekit/blob/main/backend/canister/main.mo
+The source code of the Motoko code can seen at: https://github.com/samlinux-development/ic-vercel-sveltekit/blob/main/backend/canister/main.mo
+
+
 
 
 

@@ -8,7 +8,7 @@ import { enhance } from '$app/forms';
 </script>
 
 <main>
-  <img src="/logo2.svg" alt="DFINITY logo" />
+  <img src="/icAcademy.png" alt="icAcademy logo" />
   <br />
   
   <form method="POST" action="?/bmi" use:enhance={ ({ })  => {

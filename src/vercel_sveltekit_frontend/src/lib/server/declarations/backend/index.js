@@ -10,13 +10,14 @@ export { idlFactory } from "./backend.did.js";
  * beginning in dfx 0.15.0
  */
 
-// environment variable is set in vercel administration
-// process.env.DFX_NETWORK
-// process.env.BACKEND_CANISTER_ID
+/** Environment variables are set in the Vercels administration
+  * process.env.DFX_NETWORK
+  * process.env.BACKEND_CANISTER_ID
+  * bkyz2-fmaaa-aaaaa-qaaaq-cai is the local backend canister id
+  */
 
-// 'bkyz2-fmaaa-aaaaa-qaaaq-cai' is the local backend canister id
-
-export const canisterId = process.env.BACKEND_CANISTER_ID || 'bkyz2-fmaaa-aaaaa-qaaaq-cai';
+const localCanisterId = 'bkyz2-fmaaa-aaaaa-qaaaq-cai';
+export const canisterId = process.env.BACKEND_CANISTER_ID || localCanisterId;
 
 export const createActor = (canisterId, options = {}) => {
 

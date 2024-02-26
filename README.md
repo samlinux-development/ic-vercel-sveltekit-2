@@ -65,3 +65,5 @@ https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=yegl5-fyaaa-aaaak-qda4a-cai
 
 The source code of the Motoko code can be seen at:   
 https://github.com/samlinux-development/ic-vercel-sveltekit-2/blob/main/backend/canister/main.mo
+
+Test

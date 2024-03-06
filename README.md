@@ -1,9 +1,10 @@
 <p align="left" >
-  <img width="240"  src="src/vercel_sveltekit_frontend/static/icAcademy.png">
+  <img width="240" src="https://blog.icacademy.at/images/icAcademy.png">
 </p>
 
 # VERCEL and the Internet Computer
 
+For more insights, visit our article on [icAcademy](https://blog.icacademy.at/blog/vercel-ic-sveltekit-starter).
 
 This is a demo project to demonstrate how a Web2 frontend hosted on [VERCEL](https://vercel.com) can access a Motoko backend canister on the Internet Computer using Server Side Rendering (SSR).
 
